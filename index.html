@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ayan Nandi portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<aside class="sidebar" id="sidebar">
+  <div class="info">
+    <img class="avatar" src="AN.jpeg" alt="Ayan Nandi">
+    <div>
+      <h1 class="name">Ayan Nandi</h1>
+      <p class="title">CSE (AIML) Undergraduate</p>
+    </div>
+    <button class="more-btn" id="toggle-contacts">Show Contacts</button>
+  </div>
+  <div class="extra">
+    <div class="status"><span class="dot"></span>open to work in ML roles</div>
+    <hr>
+    <ul class="contacts">
+      <li><span class="lbl">DOB</span>17/09/2004</li>
+      <li><span class="lbl">Email</span><a href="mailto:ayannandi2004@gmail.com">ayannandi2004@gmail.com</a></li>
+      <li><span class="lbl">Phone</span><a href="tel:+916297010366">+91 62970 10366</a></li>
+      <li><span class="lbl">GitHub</span><a href="https://github.com/nandi-boy" target="_blank" rel="noopener">nandi-boy</a></li>
+      <li><span class="lbl">LinkedIn</span><a href="https://linkedin.com/in/ayan-nandi/" target="_blank" rel="noopener">ayan-nandi</a></li>
+    </ul>
+    <a class="resume-btn" href="Ayan_nandi_resume.pdf" download="Ayan_nandi_resume.pdf">Download Resume</a>
+  </div>
+</aside>
+
+<div class="content">
+  <nav>
+    <ul>
+      <li><button class="nav-btn active" data-page="about">About</button></li>
+      <li><button class="nav-btn" data-page="education">Education</button></li>
+      <li><button class="nav-btn" data-page="training">Training &amp; Certification</button></li>
+      <li><button class="nav-btn" data-page="skills">Skills</button></li>
+      <li><button class="nav-btn" data-page="projects">Projects</button></li>
+      <li><button class="nav-btn" data-page="contact">Contact</button></li>
+      <li><button id="theme" aria-label="Toggle light and dark mode" title="Toggle theme">🌙</button></li>
+    </ul>
+  </nav>
+
+  <article class="page active" data-page="about">
+    <h2 class="h2">About me</h2>
+    <p class="text">B.Tech CSE (AIML) undergraduate with hands on experience building machine learning applications using Python, SQL, Scikit-learn, TensorFlow, Keras and OpenCV. I have developed end-to-end projects in agricultural crop advisory and real time emotion detection, with experience in data analysis, model training and evaluation.</p>
+    <p class="text">Interested in Artificial Intelligence, Machine Learning, Deep Learning and Computer Vision.</p>
+  </article>
+
+  <article class="page" data-page="education">
+    <h2 class="h2">Education</h2>
+    <ol class="tl">
+      <li><h4>B.Tech in CSE (AIML)</h4><span>2023 — 2027</span><p>Dr. B.C. Roy Engineering College, Durgapur</p>
+        <p>CGPA: <span class="num">7.82</span></p></li>
+      <li><h4>Class XII — WBCHSE</h4><span>2022</span><p>Kusumbani Jamunadas Khemka High School</p>
+        <p>Percentage: <span class="num">88.2%</span></p></li>
+      <li><h4>Class X — WBBSE</h4><span>2020</span><p>Kusumbani Jamunadas Khemka High School</p>
+        <p>Percentage: <span class="num">86.42%</span></p></li>
+    </ol>
+  </article>
+
+  <article class="page" data-page="training">
+    <h2 class="h2">Training &amp; Certification</h2>
+    <ol class="tl">
+      <li>
+        <h4>Entrepreneurship-Cum-Skill Development Program (E-SDP) in AIML</h4>
+        <span>January 2026</span>
+        <p class="cert-line">CTTC Bhubaneswar (Ministry of MSME, Govt. of India)</p>
+        <p class="cert-line">Certificate No. 69051/E-SDP/2025-26/11</p>
+        <p>Hands-on experience in Machine Learning &amp; Deep Learning, ML workflows, feature engineering and real world AI application development.</p>
+      </li>
+    </ol>
+  </article>
+
+  <article class="page" data-page="skills">
+    <h2 class="h2">Technical Skills</h2>
+    <div id="skills"></div>
+  </article>
+
+  <article class="page" data-page="projects">
+    <h2 class="h2">Projects</h2>
+    <ul class="projects">
+      <li class="card proj" tabindex="0" role="button" aria-expanded="false">
+        <div class="head"><h3>Hexapod Robot <span class="badge">Ongoing</span></h3><span class="plus">+</span></div>
+        <div class="more">
+          <span class="date">In progress</span>
+          <p>A six-legged walking robot project currently under development.</p>
+          <div class="tags"><span>Robotics</span></div>
+        </div>
+      </li>
+      <li class="card proj" tabindex="0" role="button" aria-expanded="false">
+        <div class="head"><h3>Krishi Sahayak : AI-Powered Crop Advisory System</h3><span class="plus">+</span></div>
+        <a class="link" href="https://github.com/nandi-boy/Krishi-Sahayak" target="_blank" rel="noopener">GitHub Repository ↗</a>
+        <div class="more">
+          <span class="date">May 2026</span>
+          <p>Architected a 3-mode agricultural advisory platform in Streamlit: an ML crop classifier, a government-data-driven statistics engine, and a multilingual agronomic reference system.</p>
+          <p>Built and evaluated a Random Forest classifier reaching <b>99.31%</b> test accuracy vs <b>97.95%</b> for a comparison ANN, on 2,200+ labeled records across 22 crops with 7 features (N, P, K, temperature, humidity, pH, rainfall).</p>
+          <div class="tags"><span>Python</span><span>Streamlit</span><span>Scikit-learn</span><span>Random Forest</span></div>
+        </div>
+      </li>
+      <li class="card proj" tabindex="0" role="button" aria-expanded="false">
+        <div class="head"><h3>Real Time Emotion Detection System</h3><span class="plus">+</span></div>
+        <a class="link" href="https://github.com/nandi-boy/Real-Time-Emotion-Detection" target="_blank" rel="noopener">GitHub Repository ↗</a>
+        <div class="more">
+          <span class="date">Feb 2026</span>
+          <p>Developed an end-to-end real time facial emotion recognition pipeline with TensorFlow, Keras and OpenCV — over <b>60%</b> validation accuracy across 5 expression classes on the FER dataset.</p>
+          <p>Designed and optimized a CNN with batch normalization and dropout layers to reduce overfitting and improve generalization. Implemented live webcam-based inference for real time emotion classification.</p>
+          <div class="tags"><span>TensorFlow</span><span>Keras</span><span>OpenCV</span><span>CNN</span></div>
+        </div>
+      </li>
+    </ul>
+  </article>
+
+  <article class="page" data-page="contact">
+    <h2 class="h2">Contact</h2>
+    <p class="text">Open to work in ML roles. Reach out any time.</p>
+    <ul class="contact-list">
+      <li class="card"><span class="lbl">Email</span><a href="mailto:ayannandi2004@gmail.com">ayannandi2004@gmail.com</a></li>
+      <li class="card"><span class="lbl">Phone</span><a href="tel:+916297010366">+91 62970 10366</a></li>
+      <li class="card"><span class="lbl">GitHub</span><a href="https://github.com/nandi-boy" target="_blank" rel="noopener">nandi-boy ↗</a></li>
+      <li class="card"><span class="lbl">LinkedIn</span><a href="https://linkedin.com/in/ayan-nandi/" target="_blank" rel="noopener">ayan-nandi ↗</a></li>
+    </ul>
+    <button class="send-btn" id="copy">Copy email</button>
+  </article>
+</div>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
